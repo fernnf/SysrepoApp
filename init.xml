@@ -1,0 +1,14 @@
+<switches xmlns="urn:rnp:sdnmultilayer:app">
+    <switch>
+        <datapath>1029120129921</datapath>
+        <name>wow</name>
+    </switch>
+    <switch>
+        <datapath>1029120129922</datapath>
+        <name>wow</name>
+    </switch>
+    <switch>
+        <datapath>1029120129923</datapath>
+        <name>wow</name>
+    </switch>
+</switches>

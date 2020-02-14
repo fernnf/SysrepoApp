@@ -1,0 +1,38 @@
+
+module sdnmultilayer-app {
+    namespace "urn:rnp:sdnmultilayer:app";
+    prefix "sml-app";
+    description "";
+    organization "Rede Nacional de Pesquisa - RNP";
+    contact "fernnf@gmail.com";
+
+    revision 2020-02-14 {
+        description "Initial revision";
+    }
+    container switches {
+        description "";
+    	list switch {
+    		key "datapath";
+    		leaf datapath {
+    			type string;
+    			description "";
+    		}
+    		leaf status {
+                default "DOWN";
+                description "Status of Switch";
+    			type enumeration {
+    				enum ACTIVE {
+    					description "Switch is active";
+    				}
+    				enum DOWN {
+    					description "Switch is down";
+    				}
+    			}
+    		}
+    		leaf name {
+    			type string;
+    			description "Switch Name";
+    		}
+    	}
+    }
+}
